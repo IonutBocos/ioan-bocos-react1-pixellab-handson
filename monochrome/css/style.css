@@ -627,6 +627,12 @@ aside img {
   display: flex;
   flex-direction: column;
 }
+
+.footer-sign-up-newsletter .form-message {
+  width: 100%;
+  text-align: center;
+}
+
 .footer-sign-up-newsletter form label {
   margin-bottom: 10px;
 }
