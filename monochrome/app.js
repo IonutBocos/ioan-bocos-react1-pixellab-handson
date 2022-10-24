@@ -54,7 +54,7 @@ class NewsletterForm extends React.Component {
 
     return (
       <form className="form-newsletter container" onSubmit={this.onSubmit}>
-        <label for="email-newsletter">sign up for our newsletter</label>
+        <label htmlFor="email-newsletter">sign up for our newsletter</label>
 
         <input
           type="text"
@@ -75,6 +75,6 @@ class NewsletterForm extends React.Component {
   }
 }
 
-const newsletterContainer = document.querySelector('.home-newsletter');
+const newsletterContainer = document.querySelector('.form-newsletter');
 // React recipe?
 ReactDOM.render(<NewsletterForm></NewsletterForm>, newsletterContainer);
