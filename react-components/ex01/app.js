@@ -31,3 +31,23 @@ const person = {
     },
   ],
 };
+
+console.warn(
+  `Folosind metoda map pe arrayul skills, returneaza si afiseaza in consola un array in care fiecare consoana este scrisa cu litera mare (vocalele nu)
+  `,
+);
+
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+const arr1 = person.skills.map((skill) => {
+  const letters = skill.split('');
+
+  letters.forEach((letter, index, letters) => {
+    if (!vowels.includes(letter)) {
+      letters[index] = letters[index].toUpperCase();
+    }
+  });
+
+  return letters.join('');
+});
+
+console.log(arr1);
