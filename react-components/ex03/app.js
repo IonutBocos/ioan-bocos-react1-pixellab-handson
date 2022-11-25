@@ -60,3 +60,24 @@ const sentences = values1.map(({ name, age }) => {
 });
 
 console.log(sentences.toString());
+
+console.warn(
+  `Prin aceeasi metoda, afiseaza o lista cu numele complet al prietenilor. `,
+);
+
+const values2 = Object.values(person.friends);
+values2.forEach(({ name, surname }) => {
+  console.log(`${surname} ${name}`);
+});
+
+console.warn(
+  `Afiseaza propozitia: “Prietenii mei sunt Larry Larryson, Steven Stevenson si Carol Carolson.” folosind Object.values()
+  `,
+);
+
+const sentence = values2.map(({ name, surname }) => {
+  const prop = `Prietenii mei sunt `;
+  return `${prop} ${name} ${surname}, `;
+});
+
+console.log(sentence.toString());

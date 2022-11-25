@@ -87,3 +87,25 @@ Object.entries(person.friends).forEach(([_, { name, age }]) => {
     `Diferenta de varsta dintre ${name} si ${person.name} este de ${diff} ani.`,
   );
 });
+
+console.warn(
+  `Folosind Object.entries() pe proprietatea skills, afiseaza toate abilitatile din obiectul skills.
+
+  `,
+);
+
+Object.entries(person.skills).forEach(([skill]) => {
+  console.log(skill);
+});
+
+console.warn(
+  `Prin aceeasi metoda, afiseaza o lista cu numele complet al prietenilor.`,
+);
+
+Object.entries(person.friends).forEach(([_, { name, surname }]) => {
+  console.log(`${name} ${surname}`);
+});
+
+console.warn(
+  `Afiseaza propozitia: “Prietenii mei sunt Larry Larryson, Steven Stevenson si Carol Carolson.” folosind Object.entries()`,
+);
